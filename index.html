@@ -1,20 +1,21 @@
 <!--This is my first project I will save onto github! -->
 <head>
     <title>Visual copy of google's homepage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <header>
         <div id="header_left">
             <ul class="header_list">
-                <li>About</li>
-                <li>Store</li>
+                <li class="header_list_left"><a href="#">About</a></li>
+                <li class="header_list_left"><a href="#">Store</a></li>
             </ul>
         </div>
         <div id="header_right">
             <ul class="header_list">
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li id="container_google_waffle">
+                <li class="header_list_right"><a href="#">Gmail</a></li>
+                <li class="header_list_right"><a href="#">Images</a></li>
+                <li class="header_list_right" id="container_google_waffle">
                     <div class="google_waffle_piece"></div>
                     <div class="google_waffle_piece"></div>
                     <div class="google_waffle_piece"></div>
@@ -25,7 +26,7 @@
                     <div class="google_waffle_piece"></div>
                     <div class="google_waffle_piece"></div>
                 </li>
-                <li><button class="button_sign_in">Sign in</button></li>
+                <li class="header_list_right"><button class="button_sign_in">Sign in</button></li>
             </ul>
         </div>
     </header>
@@ -33,7 +34,7 @@
         <img class="google_logo" src="googlelogo_color_272x92dp.png" alt="Google logo">
         <label for="search_input">
             <div id="container_searchbar">
-                <img src="#" alt="magnifying glass">
+                <img src="search_img.png" alt="magnifying glass" id="search_img">
                 <input type="text" id="search_input">
             </div>
         </label>
