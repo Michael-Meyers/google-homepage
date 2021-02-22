@@ -1,33 +1,85 @@
 :root {
-    --lightgrey: #fafafa;
+    --lightgrey: #f2f2f2;
     --gooblue: #4285F4;
+    --rgbgooblue: 66, 133, 244;
+    --darkgrey: #70757a;
     font: arial;
 }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+a:visited{
+    color: black;
+}
 body{
-    width: 100%;
+    max-height: 100vh;
+    max-width: 100vw;
     minwidth: 300px;
 }
 
 
 header{
     display: flex;
-    justify-content: space-evenly;
-    background-color: blue;
+    justify-content: space-between;
+    font-size: 11pt;
+    height: 60px;
 }
 .header_list{
     list-style: none;
     display: flex;
-    background: red;
+    align-items: center;
+    height: 37px;
      }
 #header_left{
-    background-color: green;
-    flex: 0 0 auto;
+    }
+#about{
+    padding: 10px 10px 10px 10px;
+}
+#store{
+    padding: 10px 10px 10px 10px;
 }
 #header_right{
-    background:yellow;
 }
-
-
+#gmail{
+    margin: 10px 10px 10px 10px;
+}
+#images{
+    margin: 10px 10px 10px 10px;
+}
+#container_google_waffle{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 37px;
+    height: 37px;
+    grid-template-columns: repeat(3, 6px);
+    grid-template-rows: repeat(3, 6px);
+    margin: 10px 10px 10px 10px;
+}
+#container_google_waffle:hover{
+    background-color: var(--lightgrey);
+    border-radius: 50%;
+}
+.google_waffle_piece{
+    height: 3px;
+    width: 3px;
+    background-color: #5f6368;
+}
+#button_sign_in{
+    padding: 8px 25px; 
+    color: whitesmoke;
+    background-color: var(--gooblue);
+    border-style: none;
+    border-radius: 7%;
+    margin: 10px 10px 10px 10px;
+    font-size: 11pt;
+}
+#button_sign_in:hover{
+    box-shadow: 0 1px 2px 1px rgba(66,133,244,.6);
+}
 
 /* This starts the main section of the document*/
 .google_logo{
@@ -39,13 +91,92 @@ header{
     }
 #container_searchbar{
     width: 600px;
+    height: 45px;
     display: flex;
-    margin: 0 auto 0 auto;
+    margin: 20px auto;
+    border: solid 1px rgb(214, 214, 214);
+    border-radius: 30px;
+    }
+#container_searchbar:hover{
+    box-shadow: 0 1px 2px 1px rgba(214,214,214,.6);
 }
 #search_img{
-    width: 25px;
-    height: auto;
+    margin: 0 5px;
+    align-self: center;
+    width: auto;
+    height: 20px;
     }
 #search_input{
+    border: none;
     width: 575px;
+    outline: none;
+    font-size: 14pt;
+    margin-right: 15px;
+}
+.container_button_searchbar{
+    display: flex;
+    justify-content: center;
+}
+.button_searchbar{
+    background-color: var(--lightgrey);
+    font-size: 11pt;
+    height: 40px;
+    border-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.button_searchbar:hover{
+    border: solid rgb(212, 212, 212) 1px;
+}
+
+p{
+    text-align: center;
+    font-size: 9pt;
+}
+#link_under_search{
+    color:blue;
+}
+#link_under_search:visited{
+    color:blue;
+}
+
+/*This starts the footer*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--lightgrey);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--darkgrey);
+    font-size: 10pt;
+    padding: 10px 10px 10px 10px;
+    }
+.footer_list{
+    margin: 10px 10px 10px 10px;
+    display: flex;
+}
+.footer_link{
+    margin: 10px 10px 10px 10px;
+}
+.footer_left{
+    display:flex;
+}
+.footer_right{
+    display: flex;
+}
+.footer_mid{
+    display: flex;
+}
+#leaf_img{
+    height: 15px;
+    width: 15px;
+    margin-right: 0;
+}
+.footer_link:visited{
+    color: var(--darkgrey);
 }
