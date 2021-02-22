@@ -6,63 +6,63 @@
 <body>
     <header>
         <div id="header_left">
-            <ul class="header_list">
-                <li class="header_list_left"><a href="#">About</a></li>
-                <li class="header_list_left"><a href="#">Store</a></li>
-            </ul>
+            <dive class="header_list">
+                <div id="about"><a class="header_list_left" href="#">About</a></div>
+                <div id="store"><a class="header_list_left" href="#">Store</a></div>
+            </dive>
         </div>
         <div id="header_right">
-            <ul class="header_list">
-                <li class="header_list_right"><a href="#">Gmail</a></li>
-                <li class="header_list_right"><a href="#">Images</a></li>
-                <li class="header_list_right" id="container_google_waffle">
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                    <div class="google_waffle_piece"></div>
-                </li>
-                <li class="header_list_right"><button class="button_sign_in">Sign in</button></li>
-            </ul>
+            <dive class="header_list">
+                <div id="gmail"><a class="header_list_right" href="#">Gmail</a></div>
+                <div id="images"><a class="header_list_right" href="#">Images</a></div>
+                <div id="container_google_waffle" class="header_list_right">
+                    <div id="waf_tl" class="google_waffle_piece"></div>
+                    <div id="waf_tm" class="google_waffle_piece"></div>
+                    <div id="waf_tr" class="google_waffle_piece"></div>
+                    <div id="waf_cl" class="google_waffle_piece"></div>
+                    <div id="waf_cm" class="google_waffle_piece"></div>
+                    <div id="waf_cl" class="google_waffle_piece"></div>
+                    <div id="waf_bl" class="google_waffle_piece"></div>
+                    <div id="waf_bm" class="google_waffle_piece"></div>
+                    <div id="waf_br" class="google_waffle_piece"></div>
+                </div>
+                <div id="button"><button class="header_list_right" id="button_sign_in">Sign in</button></li>
+            </div>
         </div>
     </header>
     <main>
         <img class="google_logo" src="googlelogo_color_272x92dp.png" alt="Google logo">
         <label for="search_input">
-            <div id="container_searchbar">
+            <form id="container_searchbar">
                 <img src="search_img.png" alt="magnifying glass" id="search_img">
                 <input type="text" id="search_input">
-            </div>
+            </form>
         </label>
-        <div class="button_searchbar">
-            <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+        <div class="container_button_searchbar">
+            <button class="button_searchbar" id="button_search">Google Search</button>
+            <button class="button_searchbar" id="button_lucky">I'm Feeling Lucky</button>
         </div>
-        <p class="text_searchbar">Behind the scenes.<a href="#">This is a link to 
+        <p class="text_searchbar">Behind the scenes.  <a id="link_under_search" href="#">This is a link to 
             google's flavor of the month</a></p>
     </main>
     <footer>
         <div class="footer_left">
-            <ul class="footer_list">
-                <li><a href="#">Advertising</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">How Search works</a></li>
-            </ul>
+            <dive class="footer_list">
+                <div id="advert"><a class="footer_link" href="#">Advertising</a></div>
+                <div id="business"><a class="footer_link" href="#">Business</a></div>
+                <div id="how"><a class="footer_link" href="#">How Search works</a></div>
+            </dive>
         </div>
         <div class="footer_mid">
-            <img alt="Leaf image" src="#">
+            <img class="footer_list" alt="Leaf image" src="leaf.jpeg" id="leaf_img">
             <div class="footer_list">Carbon neutral since 2007</div>
         </div>
         <div class="footer_right">
-            <ul class="footer_list">
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>            
+            <dive class="footer_list">
+                <div id="privacy"><a class="footer_link" href="#">Privacy</a></div>
+                <div id="terms"><a class="footer_link" href="#">Terms</a></div>
+                <div id="settings"><a class="footer_link" href="#">Settings</a></div>
+            </div>            
         </div>
     </footer>
 </body>
